@@ -1,6 +1,0 @@
-sources:
-  - name: seed_data
-  tables:
-    - name: test
-      meta:
-        seed_data: "read_parquet(['\\wsl.localhost\Ubuntu\home\johnsonwyo\Analytics_Test_JJ\data\estimated_annual_consumption_interval.parquet'])"

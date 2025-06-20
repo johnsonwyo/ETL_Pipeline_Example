@@ -1,7 +1,6 @@
-.venv
-.simple*
+.venv*
 .env
 simple*
-.parquet
+*.parquet
 logs/
 *.ddb
