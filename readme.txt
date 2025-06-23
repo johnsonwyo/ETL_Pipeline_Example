@@ -85,7 +85,7 @@ Should investigate elasticity based on region (gsp_group_id). Would need more kn
 
 TRENDS BY AGREEMENT TYPE:
 I drug all those boolean variables along to the end for a reason:
-    - elasticity using an enumeration between is_export, is_variable, is_charged_half_hourly
+    - elasticity using an enumeration between is_export, is_variable, is_charged_half_hourly (created)
     - elasticity using product_category
     - actual consumption for smart_import and NOT smart_import
 
