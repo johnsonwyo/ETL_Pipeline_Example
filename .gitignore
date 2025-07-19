@@ -1,6 +1,8 @@
+.gitignore
 .venv*
 .env
 simple*
 *.parquet
 logs/
 *.ddb
+*.db
