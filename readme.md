@@ -9,13 +9,7 @@ Jacoby Johnson
 
 ## PART I: ALL LOCAL, NO DOCKER
 
-## PART II: ALL LOCAL WITH DOCKER
-
-## PART III: AWS DEPLOYMENT
-
-Coming soon...
-
-The tech stack was limited to Python and SQL, though I interpreted this loosly and considered any library that I could "pip install" as fair game. 
+The tech stack for Part I was limited to Python and SQL, though this is interpreted loosly and any library that I could be installed with "pip install" was fair game. 
 Open source was the name of the game, so implementation was on Linux (WSL specifically). Goal was to implement similar tech stack to that given in the job description.
 The following technologies were used:
 
@@ -45,6 +39,14 @@ Tech stack notes:
         a bit like overkill here and definitely violated the "only python" rule.
     - There were limited options for creating visualizations directly from a .ddb database, so tableua was chosen for ease of use. 
         SQL was still used to query master data table and generate analyses via data pool.
+
+## PART II: ALL LOCAL, DOCKER, ASTRO, ONE-THREAD
+
+## PART III: AWS DEPLOYMENT, MULTITHREADED
+
+Coming soon...
+
+
 
 2. ENGINEERING
 
