@@ -5,7 +5,7 @@
         },
         {
             "name": "meter_register_agreement_configuration_interval",
-            "columns": ["interval_start", "interval_end", "meter_point_id", "product_category", "is_export", "register_id", "is_charged_half_hourly", "is_variable", "gsp_group_id", "profile_class_id", "standard_settlement_configuration_id", "time_pattern_regime_id"]
+            "columns": ["interval_start", "interval_end", "meter_point_id", "is_export", "register_id", "is_charged_half_hourly", "is_variable", "gsp_group_id", "profile_class_id", "standard_settlement_configuration_id", "time_pattern_regime_id"]
         },
         {
             "name": "period_profile_coefficients",

@@ -12,7 +12,7 @@ ppc_filtered AS (
 ),
 -- Join period_profile_coefficients
 add_ppc AS (
-    SELECT ppc.settlement_timestamp_utc, ppc.percentage_of_annual_consumption, fm.meter_point_id, fm.register_id, fm.product_category, fm.is_export, fm.is_charged_half_hourly, fm.is_variable, fm.gsp_group_id,
+    SELECT ppc.settlement_timestamp_utc, ppc.percentage_of_annual_consumption, fm.meter_point_id, fm.register_id, fm.is_export, fm.is_charged_half_hourly, fm.is_variable, fm.gsp_group_id,
         fm.profile_class_id, fm.standard_settlement_configuration_id, fm.time_pattern_regime_id
     FROM filter_mraci fm
     JOIN ppc_filtered ppc
@@ -29,9 +29,9 @@ add_estimated AS (
 -- Group at meter_point level to make joining estimated consumption to actual consumption 1-1.
 meter_point_level AS (
     SELECT settlement_timestamp_utc, meter_point_id, AVG(percentage_of_annual_consumption) AS percentage_of_annual_consumption, AVG(estimated_annual_consumption) AS estimated_annual_consumption,
-     product_category, is_export, is_charged_half_hourly, is_variable, gsp_group_id, profile_class_id, standard_settlement_configuration_id
+    is_export, is_charged_half_hourly, is_variable
     FROM add_estimated
-    GROUP BY settlement_timestamp_utc, meter_point_id, product_category, is_export, is_charged_half_hourly, is_variable, gsp_group_id, profile_class_id, standard_settlement_configuration_id
+    GROUP BY settlement_timestamp_utc, meter_point_id, is_export, is_charged_half_hourly, is_variable
 ),
 -- Need to filter overlapping ranges for q2 file
 q2 AS (
