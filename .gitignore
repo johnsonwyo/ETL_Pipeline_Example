@@ -1,4 +1,3 @@
-.gitignore
 .venv*
 .env
 simple*
@@ -6,3 +5,11 @@ simple*
 logs/
 *.ddb
 *.db
+*.wal
+.git
+.DS_Store
+airflow_settings.yaml
+__pycache__/
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg

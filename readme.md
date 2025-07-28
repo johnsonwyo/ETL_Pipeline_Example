@@ -1,7 +1,19 @@
-Jacoby Johnson
-Energy Market Engineer Test
+<a id="readme-top"></a>
 
-1. TECH STACK
+# Data Pipeline: Airflow, DBT, DuckDB
+Jacoby Johnson
+
+## PROJECT SCOPE
+
+
+
+## PART I: ALL LOCAL, NO DOCKER
+
+## PART II: ALL LOCAL WITH DOCKER
+
+## PART III: AWS DEPLOYMENT
+
+Coming soon...
 
 The tech stack was limited to Python and SQL, though I interpreted this loosly and considered any library that I could "pip install" as fair game. 
 Open source was the name of the game, so implementation was on Linux (WSL specifically). Goal was to implement similar tech stack to that given in the job description.

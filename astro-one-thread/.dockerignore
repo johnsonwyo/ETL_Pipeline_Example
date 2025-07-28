@@ -1,0 +1,6 @@
+.git
+logs/
+.venv
+airflow.db
+airflow.cfg
+include/
