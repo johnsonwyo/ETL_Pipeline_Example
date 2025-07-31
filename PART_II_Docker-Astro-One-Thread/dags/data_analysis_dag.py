@@ -31,10 +31,11 @@ my_execution_config = ExecutionConfig(
 
 @dag(
     dag_id="energy_market_analysis",
-    start_date=datetime(2025, 6, 15),
-    schedule=None,
+    start_date=datetime(2025, 7, 29),
+    schedule="@weekly",
     catchup=False,
     max_active_tasks=1,
+    default_args={"retries": 2},
 )
 def energy_analysis_dag():
     
